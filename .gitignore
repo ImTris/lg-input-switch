@@ -1,0 +1,6 @@
+node_modules/
+dist/
+native/m1ddc
+vendor/m1ddc/.objects/
+vendor/m1ddc/m1ddc
+.DS_Store

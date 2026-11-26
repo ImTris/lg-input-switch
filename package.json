@@ -1,0 +1,19 @@
+{
+  "name": "lg-input-switch",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Een kleine desktop-app voor de ingangen van je LG-monitor.",
+  "main": "app/main.js",
+  "scripts": {
+    "build:native": "node scripts/build-native.js",
+    "start": "npm run build:native && electron .",
+    "test": "node --test tests/*.test.js",
+    "package": "npm run build:native && node scripts/package.js",
+    "package:win": "node scripts/package.js win32",
+    "diagnose": "npm run build:native && node scripts/diagnose.js"
+  },
+  "devDependencies": {
+    "@electron/packager": "20.3.0",
+    "electron": "45.5.0"
+  }
+}
